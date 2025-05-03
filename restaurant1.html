@@ -4,10 +4,249 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurant page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+   
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+   
+   <link rel="shortcut icon" href="Images/dish.png" type="image/x-icon">
+
+   <!-- Remix icon -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+   <!-- Swiper's icon -->
+   <link rel="stylesheet" href="style.css">
+
+    
 </head>
 <body>
-    <p></p>
-    
-</body>
-</html>
+                                                                                              <!--    navbar-->
+
+
+
+
+
+
+    <header id="navbar" class="bg-yellow-400 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+
+            <div class="flex items-center gap-5 z-10">
+                <img src="Images/dish.png" alt="logo" class="w-12">
+                <!-- <span class="text-3xl font-bold text-blue-700">Foodie</span> -->
+            </div>
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full backdrop-blur-sm flex items-center justify-center duration-300 lg:static lg:min-h-fit lg:bg-transparent lg:w-auto lg:flex-row lg:justify-between lg:gap-20 xl:static xl:w-auto">
+
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#restaurants" class="nav-link">Restaurants</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="absolute opacity-25 top-60 pointer-events-none lg:hidden">
+                    <img src="Images/img-3.png" alt="">
+                </div>
+
+                <div class="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-4 lg:hidden xl:static xl:translate-x-0 xl:left-auto xl:bottom-auto xl:flex xl:gap-4">
+
+                    <button class="nav-btns">Sign-in</button>
+                    <button class="nav-btns">Cart</button>
+                    
+                </div>
+
+                <div class="absolute text-4xl bottom-0 social-media lg:hidden">
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-twitter-line"></i>
+                    <i class="ri-youtube-line"></i>
+                </div>
+            </div>
+            
+            <div class="text-xl sm:text-3xl cursor-pointer hover:text-blue-600 z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="flex justify-center items-center flex-col bg-cover bg-center bg-no-repeat min-h-screen w-full"
+  style="background-image: url('./Images/restaurant-1.jpg');"
+>
+        <h2 class=" text-3xl dancing-script text-white  font-bold " > Taste the Authentic Chinese Cuisine</h2>
+        <p class="text-xl dancing-script font-bold text-white">Deliciously made for you with love and spices</p>
+        <button class="w-20  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5 mt-6">
+            <a href="#menu">  order now  </a>
+            
+
+        </button>
+
+
+
+        
+<!-- nonveg section-->
+
+    </div>
+    <div id="menu" class="flex items-center justify-center flex-col space-y-3 ">
+        <h1 class="bungee-spice-regular "> MENU</h1>
+        <p class="bg-amber-400 w-full h-8  flex items-center justify-center outline-amber-400 shadow-slate-600 shadow-lg dancing-script text-3xl">nonveg</p>
+    </div>
+        <div class="grid grid-cols-3 gap-4 p-4 my-10">
+            <div class="bg-white shadow-lg rounded-lg p-4 transition-all duration-300 hover:shadow-xl hover:scale-105 flex flex-col items-center">
+                <img src="Images/Chicken-Scarpariello.webp" alt="Chicken-Scarpariello" class="w-full h-32 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">Chicken-Scarpariello</h3>
+                <button class="w-auto  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5 ">add to cart
+            
+                            </button>
+                <p class="text-lg font-bold mt-2">$10.99</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4 transition-all duration-300 hover:shadow-xl hover:scale-105 flex flex-col items-center">
+                <img src="Images\risotto.webp" alt="risotto" class="w-full h-32 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">risotto</h3>
+                <button class="w-auto  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5 ">add to cart
+            
+             
+                            </button>
+                <p class="text-lg font-bold mt-2">$12.99</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4 transition-all duration-300 hover:shadow-xl hover:scale-105 flex flex-col items-center">
+                <img src="Images/florentine-butter-chicken.webp" alt="florentine-butter-chicken" class="w-full h-32 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">florentine-butter-chicken</h3>
+                <button class="w-auto  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5">add to cart
+            
+                   
+                            </button>
+                <p class="text-lg font-bold mt-2">$9.99</p>
+            </div>
+        </div>
+
+   
+<!-- veg section-->
+    <div>
+       
+        <p class="bg-amber-400 w-full h-8  flex items-center justify-center outline-amber-400 shadow-slate-600 shadow-lg dancing-script text-3xl">veg</p>
+        <div class="grid grid-cols-3 gap-4 p-4 my-10">
+            <div class="bg-white shadow-lg rounded-lg p-4 transition-all duration-300 hover:shadow-xl hover:scale-105 flex flex-col items-center">
+                <img src="Images/spinach-lasagna.webp" alt="spinach-lasagna" class="w-full h-32 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">spinach-lasagna</h3>
+                <button class="w-auto  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5">add to cart
+            
+                   
+                            </button>
+                <p class="text-lg font-bold mt-2">$8.99</p>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-4 transition-all duration-300 hover:shadow-xl hover:scale-105 flex flex-col items-center">
+                <img src="Images\spinach-artichoke-lasagna.webp" alt="spinach-artichoke-lasagna" class="w-full h-32 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">spinach-artichoke-lasagna</h3>
+                <button class="w-auto  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5">add to cart
+            
+                  
+                            </button>
+                <p class="text-lg font-bold mt-2">$7.99</p>
+            </div>
+            
+            <div class="bg-white shadow-lg rounded-lg p-4 transition-all duration-300 hover:shadow-xl hover:scale-105 flex flex-col items-center">
+                <img src="Images\margherita-pizza.webp" alt="margherita-pizza" class="w-full h-32 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">margherita-pizza</h3>
+                <button class="w-auto  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5">add to cart
+            
+                   
+                            </button>
+                <p class="text-lg font-bold mt-2">$6.99</p>
+            </div>
+        </div>
+    </div>
+
+<!-- beverage  section-->
+    <div>
+        <p class="bg-amber-400 w-full h-8 flex items-center justify-center outline-amber-400 shadow-slate-600 shadow-lg dancing-script text-3xl">beverages</p>
+        <div class="grid grid-cols-3 gap-4 p-4 my-10">
+            <div class="bg-white shadow-lg rounded-lg p-4 transition-all duration-300 hover:shadow-xl hover:scale-105 flex flex-col items-center">
+                <img src="Images\americano-cocktail.webp" alt="americano-cocktail" class="w-full h-32 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">americano-cocktail</h3>
+                <button class="w-auto  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5">
+            
+                     add to cart 
+                            </button>
+                <p class="text-lg font-bold mt-2">$3.99</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4 transition-all duration-300 hover:shadow-xl hover:scale-105 flex flex-col items-center">
+                <img src="Images/negroni-spagliato.webp" alt="negroni-spagliato" class="w-full h-32 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">negroni-spagliato</h3>
+                <button class="w-auto  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5">
+            
+                    add to cart
+                            </button>
+                <p class="text-lg font-bold mt-2">$4.99</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4 transition-all duration-300 hover:shadow-xl hover:scale-105 flex flex-col items-center">
+                <img src="Images\classic-aperol-spritz.webp" alt="classic-aperol-spritz" class="w-full h-32 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">classic-aperol-spritz</h3>
+                <button class="w-auto  bg-yellow-400 rounded-md hover:bg-amber-500 active:bg-red-700 focus:bg-red-300 border-gray-900 shadow-gray-900 shadow-lg border-0.5">add to cart
+            
+                            </button>
+                <p class="text-lg font-bold mt-2">$2.99</p>
+            </div>
+        </div>
+    </div>
+
+
+<!--rating section-->
+    <div>
+        <p class="bg-amber-400 w-full h-8 flex items-center justify-center outline-amber-400 shadow-slate-600 shadow-lg dancing-script text-3xl">ratings</p>
+        <div class="flex flex-col items-center p-4 my-10 space-y-4">
+            <div class="bg-white shadow-lg rounded-lg p-4 w-2/3 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                <h3 class="text-xl font-semibold">John Doe</h3>
+                <p class="text-gray-600">"Amazing food and great service!"</p>
+                <p class="text-yellow-500">★★★★★</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4 w-2/3 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                <h3 class="text-xl font-semibold">Jane Smith</h3>
+                <p class="text-gray-600">"Loved the ambiance and the dishes were delicious."</p>
+                <p class="text-yellow-500">★★★★☆</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4 w-2/3 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                <h3 class="text-xl font-semibold">Emily Johnson</h3>
+                <p class="text-gray-600">"A must-visit for Chinese cuisine lovers!"</p>
+                <p class="text-yellow-500">★★★★★</p>
+            </div>
+        </div>
+    </div>
+
+   
+   
+
+
+  
+    <script src="script.js"></script>
+
+   </body>
+   </html>
